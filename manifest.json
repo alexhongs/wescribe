@@ -1,17 +1,13 @@
 {
- "manifest_version": 2,
  "name": "WeScribe",
  "description": "The simplest subscription manager. Includes adding, tracking, and deleting your subscription.",
- "version": "1",
+ "version": "1.0",
+ "manifest_version": 2,
  "author": "Alex Hong",
  "browser_action": {
-   "default_title": "Have a good day"
- },
-"chrome_url_overrides" : {
-  "newtab": "test.html"
-},
- "permissions": ["activeTab"]	
-
+   "default_popup": "hello.html",
+   "default_icon" : "hello_extensions.png"
+ }
 }
 
 
