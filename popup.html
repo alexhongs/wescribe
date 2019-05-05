@@ -1,6 +1,8 @@
 <html lang = "en">
  <head>
  	<meta charset = "UTF-8">
+  <script src="popup.js"></script>
+
 	<title> WeScript Subscription tracker</title>
 
 
@@ -11,7 +13,7 @@
       Add Subscription?
     </h1>
 
-    Subscription Name: <input type="text" name = "Subscription Name">
+    Subscription Name: <input type="text" name = "Subscription Name" id = "subscription_name">
     <br><br><br>
     Pay Amount: <input type="text" name = "Pay Amount">
     <br><br><br><br>
@@ -22,7 +24,7 @@
     <input type="radio" name="period"> Other <br>
 
     <br><br><br><br>
-    <button type="button">Add</button>
+    <button type="button" id = "add">Add</button>
   </body>
 
   <style>
@@ -30,6 +32,7 @@
       width: 100%;
   	}
   </style>
+
 </html>
 
 
