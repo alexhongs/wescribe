@@ -1,6 +1,7 @@
 <html lang = "en">
  <head>
  	<meta charset = "UTF-8">
+  <script src="etc/jquery-3.4.1.min.js"></script>
   <script src="popup.js"></script>
 
 	<title> WeScript Subscription tracker</title>
@@ -9,27 +10,61 @@
  </head>   
 
   <body>
-    <h1>
+    <h2>
       Add Subscription?
-    </h1>
+    </h2>
 
-    Subscription Name: <input type="text" name = "Subscription Name" id = "subscription_name">
-    <br><br><br>
-    Pay Amount: <input type="text" name = "Pay Amount">
-    <br><br><br><br>
-    <input type="radio" name="period"> Yearly <br>
-    <input type="radio" name="period"> Monthly <br>
-    <input type="radio" name="period"> Weekly <br>
-    <input type="radio" name="period"> Daily <br>
-    <input type="radio" name="period"> Other <br>
+    <form action = "popup.html" id = "form">
+      <br><br><br><br>
+      <input type="text" name =  "subscription_name" id = "name" placeholder="WeScribe Membership">
+      <br><br>
+      <input type="text" name =   "pay_amount" id = "amount" placeholder= "$20">
+      <br><br>
 
-    <br><br><br><br>
-    <button type="button" id = "add">Add</button>
+      Period:
+
+      <input type="text" name = "period" list="period" placeholder= "month" />
+      <datalist id="period">
+        <option value="day">daily</option>
+        <option value="week">weekly</option>
+        <option value="month">monthly</option>
+        <option value="year">yearly</option>
+      </datalist>
+      <br>
+      <!-- Starting Date: <input type="text" name =  "start_date" id = "date"> <br><br>
+ -->
+      
+      Starting Date
+      <input type="date" name="pay_date" min="2018-05-01" id = "date"><br><br>
+
+      Free For: 
+
+      <input type="text" name = "free_period" list="free_period" />
+      <datalist id = "free_period">
+        <option value=" "> </option>
+        <option value="day">day</option>
+        <option value="week">week</option>
+        <option value="month">month</option>
+        <option value="year">year</option>
+      </datalist> 
+      <br>
+
+      <br><br>
+      URL <input type="url" name="url" id = "url">
+      <br><br><br><br>
+
+
+
+      <button type="button" id = "add">Add</button>
+      <br><br><br>
+    </form>
   </body>
 
   <style>
   	body{
-      width: 100%;
+      width: 200px;
+      height: 300px;
+
   	}
   </style>
 
