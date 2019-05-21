@@ -1,9 +1,10 @@
 {
  "name": "WeScribe",
  "description": "The simplest subscription manager. You can add, delete, and track your subscriptions.",
- "version": "1.0",
+ "version": "1.0", 
  "manifest_version": 2,
  "author": "Alex Hong",
+ "permissions": ["storage"],
  "browser_action": {
     "default_icon" : "hello_extensions.png",
     "default_popup": "popup.html"

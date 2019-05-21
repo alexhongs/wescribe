@@ -4,7 +4,7 @@
   <script src="etc/jquery-3.4.1.min.js"></script>
   <script src="popup.js"></script>
 
-	<title> WeScript Subscription tracker</title>
+	<title> WeScript Subscription Tracker</title>
 
 
  </head>   
@@ -16,7 +16,7 @@
 
     <form action = "popup.html" id = "form">
       <br><br><br><br>
-      <input type="text" name =  "subscription_name" id = "name" placeholder="WeScribe Membership">
+      <input type="text" name =  "subscription_name" id = "name" placeholder="WeScribe Membership" value = "test">
       <br><br>
       <input type="text" name =   "pay_amount" id = "amount" placeholder= "$20">
       <br><br>
@@ -37,8 +37,7 @@
       Starting Date
       <input type="date" name="pay_date" min="2018-05-01" id = "date"><br><br>
 
-      Free For: 
-
+      Free Until: 
       <input type="text" name = "free_period" list="free_period" />
       <datalist id = "free_period">
         <option value=" "> </option>
@@ -50,15 +49,21 @@
       <br>
 
       <br><br>
-      URL <input type="url" name="url" id = "url">
+      URL <input type="url" name="url" id = "url" placeholder = "http:// URL">
       <br><br><br><br>
 
 
 
       <button type="button" id = "add">Add</button>
+
+
+      <button type="button" id = "storage">see Stored</button>
       <br><br><br>
     </form>
   </body>
+
+
+
 
   <style>
   	body{
