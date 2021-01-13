@@ -8,7 +8,9 @@
  "browser_action": {
     "default_icon" : "hello_extensions.png",
     "default_popup": "popup.html"
- }
+ },
+
+ "content_security_policy": "script-src 'self' https://unpkg.com; object-src 'self'"
 }
 
 

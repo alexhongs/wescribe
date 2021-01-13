@@ -61,6 +61,8 @@ function readStorage(){
 		}
 		alert("Storage: " + statement);
 	});
+
+	alert(new Date().toLocaleDateString());
 }
 
 

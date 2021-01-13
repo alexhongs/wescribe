@@ -1,8 +1,8 @@
 <html lang = "en">
  <head>
  	<meta charset = "UTF-8">
-  <script src="etc/jquery-3.4.1.min.js"></script>
-  <script src="popup.js"></script>
+
+  <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'">
 
 	<title> WeScript Subscription Tracker</title>
 
@@ -60,6 +60,14 @@
       <button type="button" id = "storage">see Stored</button>
       <br><br><br>
     </form>
+
+
+    <script src="etc/jquery-3.4.1.min.js"></script>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src ="app.js"></script>
+    <script src="popup.js"></script>
   </body>
 
 
